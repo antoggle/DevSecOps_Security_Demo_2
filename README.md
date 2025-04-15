@@ -4,28 +4,36 @@ This project simulates a basic DevSecOps pipeline with integrated security check
 
 ## 🧩 Tools Used
 - **GitHub Actions**: Automate security scans on every push/PR
-- **Semgrep**: Static code analysis for detecting vulnerable code patterns
+- **Semgrep**: Static code analysis for detecting vulnerable code patterns (OWASP Top 10)
 - **OWASP Dependency-Check**: Find known vulnerable dependencies
-- **Sample App**: A simple Python web app for testing the pipeline
+- **Sample App**: A deliberately vulnerable Python web app for security testing
 
 ## 🚀 What This Repo Shows
 - Setting up a secure CI/CD pipeline from scratch
 - Automating code security scans in GitHub Actions
 - Interpreting SAST/SCA findings and documenting risks
 - Practicing lightweight threat modeling for deployed features
+- Clean pipeline execution with real-time SAST/SCA results
 
 ## 📁 Repo Structure
 ```
-/.github/workflows/
-  - security.yml  <-- GitHub Actions pipeline
+.github/workflows/
+  - security.yml              <-- GitHub Actions pipeline
 /src/
-  - app.py        <-- Sample vulnerable code
+  - app.py                    <-- Sample vulnerable code
 /threat-model/
-  - stride_model.md
+  - stride_model.md           <-- STRIDE threat analysis
 /reports/
-  - semgrep_results.json
-  - dependency-check-report.html
+  - semgrep_results.json      <-- Sample static analysis report
+  - dependency-check-report.html  <-- Sample dependency vulnerability report
 ```
+
+## 📘 How to Use This Repo
+1. Clone the repository
+2. Review the `app.py` for intentionally vulnerable code
+3. Check the `security.yml` pipeline under `.github/workflows/`
+4. Explore the `reports/` folder for sample scan results
+5. Read the `threat-model/stride_model.md` to understand STRIDE analysis
 
 ## 🧠 Project Goals
 - Show an understanding of secure development lifecycle (SDLC)
@@ -36,6 +44,6 @@ This project simulates a basic DevSecOps pipeline with integrated security check
 ## 🙌 Inspired By
 - TryHackMe DevSecOps rooms
 - OWASP Top 10
-- Early-career security engineer prep for roles like HashiCorp and Intellectt Inc
+- Prep for early-career security engineer roles
 
 Made by **Anthony Whorton**
