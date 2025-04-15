@@ -1,6 +1,6 @@
 # 🛡️ DevSecOps CI/CD Security Demo
 
-This project simulates a basic DevSecOps pipeline with integrated security checks using GitHub Actions, Semgrep (SAST), and OWASP Dependency-Check (SCA). It's designed to demonstrate foundational skills in secure development pipelines — especially for entry-level security roles or junior DevSecOps/ AppSec engineers.
+The aim of my project is to simulate a basic DevSecOps pipeline with integrated security checks using GitHub Actions, Semgrep (SAST), and OWASP Dependency-Check (SCA). It's designed to demonstrate foundational skills in secure development pipelines — especially for entry-level security roles or junior DevSecOps/ AppSec engineers.
 
 ## 🧩 Tools Used
 - **GitHub Actions**: Automate security scans on every push/PR
