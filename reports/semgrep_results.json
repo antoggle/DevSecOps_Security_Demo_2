@@ -1,0 +1,36 @@
+{
+  "results": [
+    {
+      "check_id": "python.lang.security.audit.os-system-use",
+      "path": "app.py",
+      "start": {
+        "line": 26,
+        "col": 12
+      },
+      "end": {
+        "line": 26,
+        "col": 30
+      },
+      "extra": {
+        "message": "Detected usage of os.popen, which may be vulnerable to command injection.",
+        "severity": "WARNING"
+      }
+    },
+    {
+      "check_id": "python.sql.injection",
+      "path": "app.py",
+      "start": {
+        "line": 20,
+        "col": 17
+      },
+      "end": {
+        "line": 20,
+        "col": 68
+      },
+      "extra": {
+        "message": "Detected SQL injection vulnerability via string interpolation.",
+        "severity": "ERROR"
+      }
+    }
+  ]
+}
